@@ -19,7 +19,6 @@ contract SimplePlant {
         isAlive = true;
         plantedTime = block.timestamp;
 
-
     }
 
     // TODO 3: Buat fungsi water()
