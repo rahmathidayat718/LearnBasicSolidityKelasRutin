@@ -35,7 +35,7 @@ contract MultiplePlants {
 
     // Siram tanaman
     function waterPlant(uint256 _plantId) public {
-        plants[_plantId].waterLevel = 100;
+        plants[_plantId].waterLevel = plants[_plantId].waterLevel + 100;
     }
 
     // Dapatkan info tanaman

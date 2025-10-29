@@ -7,16 +7,8 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "addPlant",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
 				"stateMutability": "nonpayable",
-				"type": "function"
+				"type": "constructor"
 			},
 			{
 				"inputs": [
@@ -26,39 +18,19 @@
 						"type": "uint256"
 					}
 				],
-				"name": "getPlant",
+				"name": "addPlant",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
 				"outputs": [
 					{
-						"components": [
-							{
-								"internalType": "uint256",
-								"name": "id",
-								"type": "uint256"
-							},
-							{
-								"internalType": "address",
-								"name": "owner",
-								"type": "address"
-							},
-							{
-								"internalType": "enum MultiplePlants.GrowthStage",
-								"name": "stage",
-								"type": "uint8"
-							},
-							{
-								"internalType": "uint8",
-								"name": "waterLevel",
-								"type": "uint8"
-							},
-							{
-								"internalType": "bool",
-								"name": "exists",
-								"type": "bool"
-							}
-						],
-						"internalType": "struct MultiplePlants.Plant",
+						"internalType": "address",
 						"name": "",
-						"type": "tuple"
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -66,12 +38,38 @@
 			},
 			{
 				"inputs": [],
-				"name": "plantCounter",
+				"name": "ownerActionCount",
 				"outputs": [
 					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "ownerFunction",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "plantOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
 					}
 				],
 				"stateMutability": "view",
@@ -85,32 +83,12 @@
 						"type": "uint256"
 					}
 				],
-				"name": "plants",
+				"name": "waterLevel",
 				"outputs": [
 					{
-						"internalType": "uint256",
-						"name": "id",
-						"type": "uint256"
-					},
-					{
-						"internalType": "address",
-						"name": "owner",
-						"type": "address"
-					},
-					{
-						"internalType": "enum MultiplePlants.GrowthStage",
-						"name": "stage",
-						"type": "uint8"
-					},
-					{
 						"internalType": "uint8",
-						"name": "waterLevel",
+						"name": "",
 						"type": "uint8"
-					},
-					{
-						"internalType": "bool",
-						"name": "exists",
-						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -143,7 +121,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/MultiplePlants.sol": "MultiplePlants"
+			"contracts/LearnModifier.sol": "LearnModifier"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -157,12 +135,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/MultiplePlants.sol": {
-			"keccak256": "0xd68c82964de6257c44ef1f5a8a1b7936c59c8d70fce1bc6719097e27dddf2580",
+		"contracts/LearnModifier.sol": {
+			"keccak256": "0x78d9a5d5bd1cebe62bc7b35fb2ffc3a7e48800434855dc339881f67dc5576cd0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5d10d7d10502a9c43b725e6b9f17e54ed8028a7af6ec7aff1b9f1fa1a2ac0874",
-				"dweb:/ipfs/Qmc4wUA9HT15uWbLe1GKwUq1o1qsmEhaMC2aTPpQbNpe7o"
+				"bzz-raw://ec1387f479ca9119526f30737b467da7ae62760bfb5c191f27d206327c67decc",
+				"dweb:/ipfs/QmRLGrDHVgdvBoe8czKn1J4dafLceDfQrs35rnV4o8Bckg"
 			]
 		}
 	},
